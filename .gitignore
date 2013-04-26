@@ -3,11 +3,8 @@
 .classpath
 .project
 .class
-.jar
-.war
 .zip
 .rar
-.ear
 .iml
 .settings/*
 /indexes/*
