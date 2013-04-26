@@ -1,5 +1,19 @@
-*.class
-
+# file dir
+.gitignore
+.classpath
+.project
+.class
+.jar
+.war
+.zip
+.rar
+.ear
+.iml
+.settings/*
+/indexes/*
+/target/*
+/src/main/webapp/WEB-INF/classes/*
+/src/main/webapp/userfiles/*
 # Package Files #
 *.jar
 *.war

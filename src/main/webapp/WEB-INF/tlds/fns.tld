@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <description>JSTL 1.1 functions library </description>
+    <tlib-version>1.0</tlib-version>
+    <short-name>fns</short-name>
+    <uri>http://java.sun.com/jsp/jstl/functionss</uri>
+
+    <function>
+        <description>获取管理路径</description>
+        <name>getAssetsPath</name>
+        <function-class>com.wisecode.model.common.config.Global</function-class>
+        <function-signature>java.lang.String getAssetsPath()</function-signature>
+        <example>${fns:getAssetsPath()}</example>
+    </function>
+    
+    <function>
+        <description>获取网站路径</description>
+        <name>getFromPath</name>
+        <function-class>com.wisecode.model.common.config.Global</function-class>
+        <function-signature>java.lang.String getFromPath()</function-signature>
+        <example>${fns:getFromPath()}</example>
+    </function>
+
+    <function>
+        <description>获取网站URL后缀</description>
+        <name>getUrlSuffix</name>
+        <function-class>com.wisecode.model.common.config.Global</function-class>
+        <function-signature>java.lang.String getUrlSuffix()</function-signature>
+        <example>${fns:getUrlSuffix()}</example>
+    </function>
+
+    <function>
+        <description>获取配置</description>
+        <name>getConfig</name>
+        <function-class>com.wisecode.model.common.config.Global</function-class>
+        <function-signature>java.lang.String getConfig(java.lang.String)</function-signature>
+        <example>${fns:getConfig(key)}</example>
+    </function>
+
+    <!--UserUtils-->
+    <function>
+        <description>获取当前用户对象</description>
+        <name>getUser</name>
+        <function-class>com.wisecode.model.common.utils.UserUtils</function-class>
+        <function-signature>com.wisecode.model.model.sys.entity.User getUser()</function-signature>
+        <example>${fns:getUser()}</example>
+    </function>
+
+    <function>
+        <description>获取当前用户的菜单对象列表</description>
+        <name>getMenuList</name>
+        <function-class>com.wisecode.model.common.utils.UserUtils</function-class>
+        <function-signature>java.util.List getMenuList()</function-signature>
+        <example>${fns:getMenuList()}</example>
+    </function>
+    
+    <function>
+        <description>获取当前用户的部门对象列表</description>
+        <name>getOfficeList</name>
+        <function-class>com.wisecode.model.common.utils.UserUtils</function-class>
+        <function-signature>java.util.List getOfficeList()</function-signature>
+        <example>{fns:getOfficeList()}</example>
+    </function>
+
+
+</taglib>
